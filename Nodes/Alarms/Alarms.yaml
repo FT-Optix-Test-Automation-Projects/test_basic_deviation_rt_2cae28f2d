@@ -1,0 +1,209 @@
+Name: Alarms
+Id: g=3293e7cd8de0bb06cc725e017a984470
+Type: AlarmsCategoryFolder
+Children:
+- Name: ExclusiveDeviationAlarm1
+  Id: g=0b459b1ef7d84655b79ad314b3872903
+  Type: ExclusiveDeviationAlarmController
+  Children:
+  - Name: Setpoint
+    Id: g=c311c3159d640f03b970c2e9c8314477
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 10.0
+  - Name: InputValue
+    Id: g=4323124e3d29fd7742c9eb0d604fcd2e
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=4e43263ae1f0490481bbc35b47a45af9
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/test_basic_deviation_rt_2cae28f2d/Model/Variable1"
+  - Name: LastEvent
+    Id: g=9d8611304c2e0ebf046db7912a7fca21
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=11;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=83
+    Direction: Forward
+  - Name: HighHighLimit
+    Id: g=a0913fe793b6e6ac1dbad46969d4deda
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 2.0
+  - Name: HighLimit
+    Id: g=fa282ce24f806597b4c171b16377f974
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: LowLimit
+    Id: g=a6c5377894c73c7d28333b6b00221c98
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: -1.0
+  - Name: LowLowLimit
+    Id: g=7426af0688e40a891dbdcc766eaee2a6
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: -2.0
+- Name: ExclusiveDeviationAlarm2
+  Id: g=48c29b94c62c4bd4b3e888549305c2a3
+  Type: ExclusiveDeviationAlarmController
+  Children:
+  - Name: Setpoint
+    Id: g=74622c075f49fef111ad8d2c58de1ac4
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 10.0
+  - Name: InputValue
+    Id: g=d776bd567d2a8d8b38f02cc93907eebd
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=81cb4d553d36455fab74df33fee06c16
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/test_basic_deviation_rt_2cae28f2d/Model/Variable1"
+  - Name: LastEvent
+    Id: g=17c34de4b184c9a5c0313bc7cbbbfddb
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=11;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=83
+    Direction: Forward
+  - Name: LowLowLimit
+    Id: g=257aa4d5ea3a0e3c750b765c65a4fbec
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: -2.0
+  - Name: AutoAcknowledge
+    Id: g=ceceeea2720cc0bffa6c17dfedeadc22
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: NonExclusiveDeviationAlarm1
+  Id: g=7969874f4e1b49f49b68b5b864d4d026
+  Type: NonExclusiveDeviationAlarmController
+  Children:
+  - Name: Setpoint
+    Id: g=ca02965503d2702f0188fb844002469d
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 10.0
+  - Name: InputValue
+    Id: g=7f812411bce4de2efb99922daf86ab80
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=8dec17ff18ff47f585327fdc4f67d169
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/test_basic_deviation_rt_2cae28f2d/Model/Variable1"
+  - Name: LastEvent
+    Id: g=cac2da86751187692a39ad96a1a2e845
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=11;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=83
+    Direction: Forward
+  - Name: HighHighLimit
+    Id: g=3c0ecda2e6483df2810e38bd7a36ef99
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 2.0
+  - Name: HighLimit
+    Id: g=7c7074f0d809970dbe3aeb51c8a66773
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: LowLimit
+    Id: g=7facd3b6cf6b7e1b1fb9417b83a6b5d5
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: -1.0
+  - Name: LowLowLimit
+    Id: g=21333e9f27cf3d466d199f678a8e649a
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: -2.0
+- Name: NonExclusiveDeviationAlarm2
+  Id: g=a0be61472b3b41a0b8ee468ad6c3dadc
+  Type: NonExclusiveDeviationAlarmController
+  Children:
+  - Name: Setpoint
+    Id: g=ddd192c56d6a82cda0d0f93d3e135729
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 10.0
+  - Name: InputValue
+    Id: g=12575a769fe1b5bb3e0e25e64f5e4c86
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=ad8756e3de934f1ea93df9cb3452eb00
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/test_basic_deviation_rt_2cae28f2d/Model/Variable1"
+  - Name: LastEvent
+    Id: g=4552fe3138193da9d2ad72eb9330277e
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=11;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=83
+    Direction: Forward
+  - Name: LowLowLimit
+    Id: g=d6a2a8aa5928ae876e9f5f197ed07e92
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: -2.0
+  - Name: AutoAcknowledge
+    Id: g=927acc61db3fd49e821f405581df2164
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AutoConfirm
+    Id: g=df5248507554a6b922a1e874706148c4
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
